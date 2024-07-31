@@ -33,8 +33,8 @@ def _run_after_failure(retry_state):
 
 
 class Notifier:
-  _KEEP_ALIVE_INTERVAL = 10.0
-  _TIME_TO_HANDLE_REQUESTS = 100e-3
+  _KEEP_ALIVE_INTERVAL = 50.0
+  _TIME_TO_HANDLE_REQUESTS = 100e-2
 
   def __init__(self, port: int, local_ip: str):
     self._configurations = []
